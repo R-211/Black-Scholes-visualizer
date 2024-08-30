@@ -13,3 +13,7 @@ This code uses the [CERN ROOT C++ library](https://root.cern/), therefore it wil
 
 Visit the ROOT [installation page](https://root.cern/install/), choose the appropriate installation method for your operating system and follow the provided instructions to complete the installation.
 Also ensure your project is set up to use C++17.
+
+# Example of how it looks like
+
+![screenshot](example.png)
