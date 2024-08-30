@@ -4,27 +4,27 @@
 
 PricingInfo pricing_info
 {
-    0.03,        // risk-free interest rate (3%)
-    100.0,       // strike price
-    100.0,       // underlying price (at-the-money)
-    0.5,         // time to maturity (6 months)
-    0.30,        // volatility (30%)
-    OptionType::Call,
-    6.0          // paid price
+    0.0,        	// Interest rate
+    0.0,       		// Strike price
+    0.0,       		// Underlying price 
+    0.0,         	// Time to maturity 
+    0.0,        	// Volatility
+    OptionType::Call,	// Option type
+    0.0          	// Paid price
 };
 
 AxisInfo x_axis
 {
     Axes::UnderlyingPrice,
-    70.0,        // min underlying price
-    3.0          // step size
+    0.0,        		// min x_axis value
+    0.0          		// step size
 };
 
 AxisInfo y_axis
 {
     Axes::Volatility,
-    0.10,        // min volatility
-    0.03         // step size
+    0.0,        		// min y_axis value
+    0.0         		// step size
 };
 
 int main(int argc, char** argv)
@@ -34,11 +34,11 @@ int main(int argc, char** argv)
 
     BlackScholes black_scholes(pricing_info);
 
-    black_scholes.drawHeatmap(x_axis, y_axis, 15, 100);
+    black_scholes.drawHeatmap(x_axis, y_axis, 0, 0);
 
     canvas.Draw();
     app.Run();
 
-	return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }
 
