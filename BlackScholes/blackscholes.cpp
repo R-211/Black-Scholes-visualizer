@@ -57,9 +57,9 @@ void BlackScholes::drawHeatmap(AxisInfo& x_axis, AxisInfo& y_axis, std::size_t a
     double min_pnl = std::numeric_limits<double>::max();
     double max_pnl = std::numeric_limits<double>::lowest();
 
-    for (Index i{0}; i < x_axis_vector_.size(); ++i)
+    for (Index i{ 0 }; i < x_axis_vector_.size(); ++i)
     {
-        for (Index j{0}; j < y_axis_vector_.size(); ++j)
+        for (Index j{ 0 }; j < y_axis_vector_.size(); ++j)
         {
             updatePricingInfo(x_axis.axis, x_axis_vector_[i]);
             updatePricingInfo(y_axis.axis, y_axis_vector_[j]);
